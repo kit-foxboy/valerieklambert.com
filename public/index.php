@@ -90,6 +90,38 @@
                     </div>
                 </div>
             </section>
+
+            <section class="section-features">
+                <div class="features">
+                    <h3 class="features__header">How I Can Help</h3>
+                    <div class="features__body">
+                        <div class="features__feature-box">
+                            <div class="features__icon-area">
+                                <i class="features__icon">&nbsp;</i>
+                                <h3 class="features__header">Telehealth</h3>
+                                <p class="features__text">Safe and secure online appointments</p>
+                                <a href="#" class="features__link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="features__feature-box">
+                            <div class="features__icon-area">
+                                <i class="features__icon">&nbsp;</i>
+                                <h3 class="features__header">Accepts Insurance</h3>
+                                <p class="features__text">Several common providers accepted</p>
+                                <a href="#" class="features__link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="features__feature-box">
+                            <div class="features__icon-area">
+                                <i class="features__icon">&nbsp;</i>
+                                <h3 class="features__header">Resources</h3>
+                                <p class="features__text">Free articles, advice, and inspirational quotes</p>
+                                <a href="#" class="features__link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
