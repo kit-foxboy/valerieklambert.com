@@ -4,5 +4,10 @@
 
 @import "base/base";
 
-// @import "layouts/grid";
+@import "layouts/grid";
 @import "layouts/navigation";
+
+// @import "components/navbar";
+// @import "components/hero-image";
+
+@import "pages/home";
