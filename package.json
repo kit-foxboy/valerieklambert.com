@@ -13,7 +13,6 @@
     },
     "scripts": {
         "watch:sass": "node-sass sass/main.scss public/css/styles.css -w",
-    
         "compile:sass": "node-sass sass/main.scss public/css/styles.comp.css",
         "concat:css": "concat -o public/css/styles.concat.css public/css/icon-font.css public/css/styles.comp.css",
         "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/styles.concat.css -o public/css/styles.prefix.css",

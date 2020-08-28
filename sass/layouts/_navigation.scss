@@ -10,8 +10,8 @@
         height: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 2.5rem;
+        right: 3.5rem;
         background-image: radial-gradient($primaryColor, $secondaryColor);
         z-index: 1000;
         transition: transform .6s cubic-bezier(0.83, 0, 0.17, 1);
@@ -33,8 +33,8 @@
         height: 7rem;
         border-radius: 50%;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 2.5rem;
+        right: 3rem;
         z-index: 2000;
         box-shadow: 0 1rem 3rem $boxShadowLight;
         text-align: center;
@@ -122,7 +122,7 @@
         &::after {
             width: 3rem;
             height: 2px;
-            background-color: $blackColor;
+            background-image: linear-gradient(to right, $primaryColor , $secondaryColor);
             display: inline-block;
         }
 

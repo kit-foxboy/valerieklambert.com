@@ -6,3 +6,8 @@
     width: 100%;
     transform: translate(-50%, -50%);
 }
+
+@mixin verticalCenter {
+    position: absolute;
+    top: 50%;
+}

@@ -3,11 +3,13 @@
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/animations";
 
 @import "layouts/grid";
 @import "layouts/navigation";
+@import "layouts/landing";
 
-// @import "components/navbar";
-// @import "components/hero-image";
+@import "components/navbar";
+@import "components/hero";
 
 @import "pages/home";
