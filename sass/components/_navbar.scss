@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 14rem;
+    padding-top: .8rem;
+    padding-bottom: 1rem;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    border-bottom: 4px solid $secondaryColor;
+
+    &__brand {
+        text-align: center;
+        // margin-top: .8rem;
+
+        &--top {
+            font-size: 2rem;
+        }
+
+        &--bottom {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__divider {
+        width: 12rem;
+        fill: $whiteColor;
+        stroke: $secondaryColor;
+    }
+
+    &__page-list {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    &__page-item {
+        display: inline-block;
+        font-size: 2.2rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited { 
+            text-decoration: none;
+            color: $whiteColor;
+        }
+    }
+}

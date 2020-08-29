@@ -1,0 +1,23 @@
+.home {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "content sidebar"
+                         "features sidebar";
+    column-gap: 6rem;
+    max-width: 95vw;
+    margin: auto;
+
+    & .section-content-body {
+        grid-area: content;
+    }
+
+    & .section-contact {
+        grid-area: sidebar;
+    }
+
+    & .section-features {
+        grid-area: features;
+    }
+}
