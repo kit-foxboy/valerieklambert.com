@@ -43,13 +43,14 @@
         </div>
 
         <div class="hero">
-            <div class="hero__image">&nbsp;</div>
             <div class="hero__textarea">
-                <h2 class="hero__text hero__text--hide">Grief?</h2>
-                <h2 class="hero__text hero__text--hide">Chronic Illness?</h2>
-                <h2 class="hero__text hero__text--hide">Depression and Anxiety?</h2>
+                <h2 class="hero__text hero__text">Grief?</h2>
+                <h2 class="hero__text hero__text">Chronic Illness?</h2>
+                <h2 class="hero__text hero__text">Depression?</h2>
+                <h2 class="hero__text hero__text">Anxiety?</h2>
                 <h2 class="hero__text">Hope</h2>
             </div>
+            <div class="hero__image">&nbsp;</div>
         </div>
     </header>
 

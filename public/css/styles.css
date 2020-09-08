@@ -12,7 +12,7 @@ body {
   box-sizing: border-box; }
 
 ::selection {
-  background-color: #67DE5E;
+  background-color: #43b3e5;
   color: #EDF5E1; }
 
 @keyframes moveInLeft {
@@ -60,9 +60,9 @@ footer {
     height: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 2.5rem;
+    top: .5rem;
     right: 3.5rem;
-    background-image: radial-gradient(#67DE5E, #43b3e5);
+    background-image: radial-gradient(#43b3e5, #67DE5E);
     z-index: 1000;
     transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1); }
   .navigation__button {
@@ -71,12 +71,16 @@ footer {
     height: 7rem;
     border-radius: 50%;
     position: fixed;
-    top: 2.5rem;
+    top: .5rem;
     right: 3rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer; }
+  .navigation__button:hover .navigation__icon,
+  .navigation__button:hover .navigation__icon::before,
+  .navigation__button:hover .navigation__icon::after {
+    background-color: #67DE5E; }
   .navigation__nav {
     width: 0;
     height: 100vh;
@@ -110,7 +114,7 @@ footer {
     transition: all .4s; }
   .navigation__link:hover, .navigation__link:active {
     background-position: 100%;
-    color: #67DE5E;
+    color: #43b3e5;
     transform: translateX(1rem); }
   .navigation__link span {
     display: inline-block;
@@ -126,7 +130,7 @@ footer {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
       height: 2px;
-      background-image: linear-gradient(to right, #67DE5E, #43b3e5);
+      background-color: #43b3e5;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
@@ -168,55 +172,63 @@ footer {
 
 .navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 14rem;
-  padding-top: .8rem;
-  padding-bottom: 1rem;
-  background-color: #67DE5E;
-  color: #EDF5E1;
-  border-bottom: 4px solid #43b3e5; }
+  height: 8rem;
+  padding-right: 10rem;
+  background-color: #43b3e5;
+  color: #EDF5E1; }
   .navbar__brand {
+    flex: 0 0 20%;
     text-align: center; }
     .navbar__brand--top {
       font-size: 2rem; }
     .navbar__brand--bottom {
-      font-size: 1.4rem; }
+      font-size: 1.25rem; }
   .navbar__divider {
-    width: 12rem;
-    fill: #EDF5E1;
-    stroke: #43b3e5; }
+    width: 8rem;
+    fill: #EDF5E1; }
   .navbar__page-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex: 0 0 40%;
+    margin-left: auto;
     list-style-type: none; }
   .navbar__page-item {
     display: inline-block;
-    font-size: 2.2rem; }
+    font-size: 1.8rem; }
   .navbar__link:link, .navbar__link:visited {
     text-decoration: none;
     color: #EDF5E1; }
 
 .hero {
+  display: flex;
   position: relative;
   width: 100%;
   height: 50vh; }
   .hero__image {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-image: url("/images/hope.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
   .hero__textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
-    top: 50%;
-    left: 5vw;
+    width: 25vw;
+    height: 100%;
+    padding: 5rem 0;
+    padding-left: 2.5rem;
+    background-color: black;
+    color: #EDF5E1;
+    opacity: 0.75;
+    z-index: 1;
     transition: all .4s; }
   .hero__text {
-    font-size: 6rem;
-    animation: moveInLeft .5s ease-out .75s; }
-    .hero__text--hide {
-      display: none; }
+    font-size: 4rem; }

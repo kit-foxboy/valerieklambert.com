@@ -1,11 +1,12 @@
 .hero {
+    display: flex;
     position: relative;
     width: 100%;
     height: 50vh;
 
     &__image {
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         background-image: url('/images/hope.jpg');
         background-size: cover;
@@ -14,17 +15,24 @@
     }
 
     &__textarea {
-        @include verticalCenter;
-        left: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: flex-end;
+        position: absolute;
+        width: 25vw;
+        height: 100%;
+        padding: 5rem 0;
+        padding-left: 2.5rem;
+        background-color: black;
+        color: $whiteColor;
+        opacity: 0.75;
+        z-index: 1;
         transition: all .4s;
     }
 
     &__text {
-        font-size: 6rem;
-        animation: moveInLeft .5s ease-out .75s;
-
-        &--hide {
-            display: none;
-        }
+        font-size: 4rem;
+        // animation: moveInLeft .5s ease-out .75s;
     }
 }
