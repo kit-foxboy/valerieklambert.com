@@ -1,11 +1,11 @@
 .home {
-    grid-column: 1 / -1;
+    grid-column: 2 / 12;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr auto;
+    // grid-template-columns: 1fr auto;
     grid-template-areas: "content sidebar"
                          "features sidebar";
-    column-gap: 6rem;
+    column-gap: 4rem;
     max-width: 95vw;
     margin: auto;
 

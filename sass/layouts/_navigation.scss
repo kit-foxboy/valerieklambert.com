@@ -29,8 +29,8 @@
 
     &__button {
         background-color: $whiteColor;
-        width: 7rem;
-        height: 7rem;
+        width: 6.5rem;
+        height: 6.5rem;
         border-radius: 50%;
         position: fixed;
         top: .5rem;
@@ -121,7 +121,7 @@
     //ICON
     &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 3rem;
         
         &,
         &::before,

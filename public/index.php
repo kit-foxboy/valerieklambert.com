@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valerie K Lambert, LCSW CT</title>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous"> -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -46,8 +47,7 @@
             <div class="hero__textarea">
                 <h2 class="hero__text hero__text">Grief?</h2>
                 <h2 class="hero__text hero__text">Chronic Illness?</h2>
-                <h2 class="hero__text hero__text">Depression?</h2>
-                <h2 class="hero__text hero__text">Anxiety?</h2>
+                <h2 class="hero__text hero__text">Depression and Anxiety?</h2>
                 <h2 class="hero__text">Hope</h2>
             </div>
             <div class="hero__image">&nbsp;</div>
@@ -56,12 +56,17 @@
 
     <main class="content home">
         <section class="section-content-body">
-            <div class="card">
-                <div class="card__header">
-                    <h3 class="card__header-text">You Are Not Alone</h3>
+            <div class="block">
+                <div class="block__header">
+                    <h3 class="block__header-text">You Are Not Alone</h3>
                 </div>
-                <div class="card__body">
-                    <p class="card__body-text">
+                <div class="block__body">
+                    <p class="block__body-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima modi quos esse facere animi accusantium quo et aut mollitia dolorum pariatur doloremque, ullam maiores ipsam. Est non obcaecati esse?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam officia minus ratione autem. Accusantium sit sint autem facilis voluptatibus veritatis vero nulla aspernatur exercitationem consectetur, corrupti impedit vitae dicta!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam placeat aliquid veniam quas hic. Quo odit nostrum nesciunt sint sed, repudiandae laboriosam esse, magnam quis necessitatibus incidunt eaque. Ullam, a!
+                    </p>
+                    <p class="block__body-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima modi quos esse facere animi accusantium quo et aut mollitia dolorum pariatur doloremque, ullam maiores ipsam. Est non obcaecati esse?
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam officia minus ratione autem. Accusantium sit sint autem facilis voluptatibus veritatis vero nulla aspernatur exercitationem consectetur, corrupti impedit vitae dicta!
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam placeat aliquid veniam quas hic. Quo odit nostrum nesciunt sint sed, repudiandae laboriosam esse, magnam quis necessitatibus incidunt eaque. Ullam, a!
@@ -72,7 +77,9 @@
 
         <section class="section-contact">
             <div class="contact-box">
-                <h3 class="contact-box__header">Let's Talk</h3>
+                <div class="contact-box__header">
+                    <h3 class="contact-box__header-text">Let's Talk</h3>
+                </div>
                 <a href="about" class="contact-box__thumbnail">
                     <img src="https://dummyimage.com/200x200/000/fff" alt="Valerie Kay Lambert portrait" class="contact-box__thumbnail-image">
                 </a>

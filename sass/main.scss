@@ -2,6 +2,9 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "vendors/fontawesome/fontawesome.scss";
+@import "vendors/fontawesome/solid.scss";
+
 @import "base/base";
 @import "base/animations";
 
@@ -11,5 +14,9 @@
 
 @import "components/navbar";
 @import "components/hero";
+@import "components/block";
+@import "components/contact-box";
 
 @import "pages/home";
+
+// @import "solid.scss";
