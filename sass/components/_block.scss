@@ -2,7 +2,7 @@
     margin: 3rem 0;
     padding-bottom: 2rem;
     border-radius: 2rem;
-    box-shadow: 0 1rem 3rem $boxShadowLight;
+    box-shadow: 0 1rem 3rem $boxShadowDark;
     background-color: $whiteColor;
 
     &__header {
@@ -22,6 +22,7 @@
     &__body {
         padding: 0 4rem;
         font-size: 1.6rem;
+        // line-height: 2rem;
     }
 
     &__body-text {

@@ -7177,7 +7177,7 @@ footer {
     height: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: .5rem;
+    top: .75rem;
     right: 3.5rem;
     background-image: radial-gradient(#43b3e5, #67DE5E);
     z-index: 1000;
@@ -7353,7 +7353,7 @@ footer {
   margin: 3rem 0;
   padding-bottom: 2rem;
   border-radius: 2rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
   background-color: ghostwhite; }
   .block__header {
     max-width: 50%;
@@ -7377,7 +7377,7 @@ footer {
   text-align: center;
   border-radius: 2rem;
   background-color: ghostwhite;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25); }
   .contact-box__header {
     max-width: 80%;
     padding: 2rem; }
