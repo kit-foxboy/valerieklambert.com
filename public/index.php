@@ -83,8 +83,11 @@
                 <a href="about" class="contact-box__thumbnail">
                     <img src="https://dummyimage.com/200x200/000/fff" alt="Valerie Kay Lambert portrait" class="contact-box__thumbnail-image">
                 </a>
-                <p class="contact-box__address">1060 East 100 South #202</p>
-                <p class="contact-box__address">Salt Lake City, Utah 84102</p>
+                <div class="contact-box__location">
+                    <p class="contact-box__address">Valerie Lambert, LCSW, CT</p>
+                    <p class="contact-box__address">1060 East 100 South #202</p>
+                    <p class="contact-box__address">Salt Lake City, Utah 84102</p>
+                </div>
                 <div class="contact-box__contact-form">
                     <a href="tel:801-533-5632" class="contact-box__button">
                         <i class="contact-box__icon contact-box__icon--phone">&nbsp;</i>

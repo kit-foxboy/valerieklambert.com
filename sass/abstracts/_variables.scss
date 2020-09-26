@@ -2,12 +2,16 @@
 $primaryColor: #43b3e5;
 $secondaryColor: #67DE5E;
 $whiteColor: ghostwhite;
-$blackColor: #000;
+$blackColor: #555;
 
 //BOX SHADOWS
 $boxShadowLight: rgba($blackColor, .1);
 $boxShadowDark: rgba($blackColor, .25);
 $borderShadowSecondary: rgba($secondaryColor, .5);
+
+//BORDERS
+$borderRadiusHeader: .25rem; 
+$borderRadiusBlock: .1rem;
 
 //ETC
 // $fa-font-path:        "/public/css/webfonts";

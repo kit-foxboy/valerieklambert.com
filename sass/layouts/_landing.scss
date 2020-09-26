@@ -2,12 +2,13 @@
     grid-column: 2 / 12;
     display: grid;
     grid-template-rows: auto auto;
-    // grid-template-columns: 1fr auto;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: "content sidebar"
                          "features sidebar";
     column-gap: 4rem;
     max-width: 95vw;
     margin: auto;
+    margin-bottom: 6rem;
 
     & .section-content-body {
         grid-area: content;
@@ -20,4 +21,9 @@
     & .section-features {
         grid-area: features;
     }
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
 }

@@ -2,8 +2,3 @@
     display: grid; 
     grid-template-columns: repeat(12, 1fr);
 }
-
-header,
-footer {
-    grid-column: 1 / -1;
-}
