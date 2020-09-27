@@ -1,0 +1,25 @@
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    max-height: 35vh;
+    min-height: 22rem;
+    font-size: 1.8rem;
+    background-color: rgba($whiteColor, 0.75);
+    color: $blackColor;
+
+    &:hover {
+        transform: translateY(-5%);
+    }
+
+    &__icon {
+        @extend %fa-icon;
+        @extend .fas;
+
+        &::before {
+            font-size: 4.8rem;
+            content: fa-content($fa-var-computer-classic);
+        }
+    }
+}
