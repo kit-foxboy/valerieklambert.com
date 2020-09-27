@@ -7275,8 +7275,8 @@ body {
   grid-template-areas: "content sidebar" "features sidebar";
   column-gap: 4rem;
   max-width: 95vw;
-  margin: auto;
-  margin-bottom: 6rem; }
+  margin: 4rem auto;
+  margin-bottom: 4rem; }
   .home .section-content-body {
     grid-area: content; }
   .home .section-contact {
