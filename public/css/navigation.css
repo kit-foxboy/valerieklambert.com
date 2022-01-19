@@ -1,0 +1,162 @@
+:root {
+    --primary-color-filter: invert(73%) sepia(93%) saturate(330%) hue-rotate(58deg) brightness(91%) contrast(90%);
+    --secondary-color-filter: invert(52%) sepia(91%) saturate(708%) hue-rotate(150deg) brightness(105%) contrast(105%);
+}
+
+@media (min-width:320px) {
+    .navigation-background {
+        position: fixed;
+        z-index: 1000;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        top: 2rem;
+        right: 3rem;
+        background-image: radial-gradient(var(--primary-color), var(--secondary-color));
+        transition: transform .8s;
+    }
+    
+    .navigation-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 2000;
+        width: 7rem;
+        height: 7rem;
+        top: 1.5rem;
+        right: 2.5rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    
+    .navigation-icon {
+        content: "";
+        width: 100%;
+        height: 50%;
+        background-image: url(../images/lightbulb-light.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: var(--secondary-color-filter);
+    }
+    
+    
+    .navigation-checkbox {
+        display: none;
+    }
+    
+    .navigation-checkbox:checked ~ .navigation-background {
+        transform: scale(50);
+    }
+    
+    /* .navigation-checkbox:checked ~ .nav {
+        width: 100%;
+        opacity: 1;
+    } */
+    
+    .navigation-checkbox:checked ~ .nav .navigation-item {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .navigation-checkbox:checked ~ .navigation-button .navigation-icon {
+        background-image: url(../images/lightbulb-on-light.svg);
+    }
+    
+    .navigation-list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+    
+    .navigation-item {
+        margin: 1rem;
+        transform: translateX(-25%);
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    
+    .navigation-item:nth-child(1) {
+        transition-delay: 0.0s;
+    }
+    .navigation-item:nth-child(2) {
+        transition-delay: 0.05s;
+    }
+    .navigation-item:nth-child(3) {
+        transition-delay: 0.1s;
+    }
+    .navigation-item:nth-child(4) {
+        transition-delay: 0.15s;
+    }
+    
+    .navigation-link:link,
+    .navigation-link:visited {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: whitesmoke;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, whitesmoke 50%);
+        background-size: 250%;
+        transition: all .4s;
+    }
+    
+    .navigation-link:hover,
+    .navigation-link:active {
+        background-position: 100%;
+        color: var(--secondary-color);
+        transition: all .4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    
+    .nav {
+        position: fixed;
+        z-index: 1500;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%
+    }
+    
+    .header {
+        position: relative;
+    }
+    
+    .navbar {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: flex-start;
+        height: 10rem;
+        width: 100%;
+        color: whitesmoke;
+        background-color: var(--primary-color);
+    }
+    
+    .navbar-brand {
+        width: 100%;
+        margin: 0;
+        margin-left: 2.5rem;
+        font-size: 2.4rem;
+    }
+    
+    .navbar-brand .main {
+        display: block;
+    }
+     
+    .navbar-navigation {
+        display: none;
+    }
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

@@ -6,108 +6,106 @@
     box-sizing: inherit; 
 }
 
+:root {
+    --primary-color: #67DE5E;
+    --primary-color-dark: #58BF50;
+    --secondary-color: #00d4ff;
+    --secondary-color-rgba: rgba(0,212,255,1);
+}
+
+html {
+    font-size: 10px;
+}
+
 body {
-    line-height: 1.7;
-    /* font-size: 62.5%;  */
+    line-height: 1.7; 
     font-weight: 400;
     box-sizing: border-box;
 }
 
 ::selection {
-    background-color: #67DE5E;
+    background-color: var(--primary-color);
     color: #EDF5E1; 
-}
-
-.hero-image {
-    position: absolute;
-    width: 100vw;
-    object-fit: contain;
-}
-
-.hero-text {
-    animation-name: moveInTop;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    backface-visibility: hidden;
-}
-
-.hero-text:nth-child(2) {
-    opacity: 0;
-    animation-delay: 2s;
-}
-
-.hero-text:nth-child(3) {
-    opacity: 0;
-    animation-delay: 4s;
 }
 
 /*/////MEDIA QUERIES/////*/
 @media (min-width:320px) { 
 
-    .nav-background {
-        height: 0;
-        width: 0;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,222,94,1) 0%, rgba(0,212,255,1) 100%);
-    }
-    
-    .nav-list {
-        display: none;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 10vh;
-        width: 100%;
-        color: whitesmoke;
-        background-color: #67DE5E;
-    }
-
-    .brand-header {
-        margin: 0;
-        margin-left: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .nav-button {
-        margin-right: 1rem;
-    }
-
     .hero-banner {
-        height: 40vh;
+        height: 40rem;
         position: relative;
         background-image: url(../images/grief.jpg);
         background-size: cover;
         background-position: center;
         background-color: slategray;
-        /* animation-name: fadeOut, changeFirstHeroImage, fadeIn;
+        animation-name: fadeOut, changeHeroImage, fadeIn;
         animation-fill-mode: forwards;
-        animation-duration: 500ms, 100ms, 500ms;
-        animation-delay: 2000ms, 2500ms, 2600ms;
-        animation-timing-function: linear; */
+        animation-duration: .5s;
+        animation-delay: 5.5s;
+        animation-timing-function: linear;
     }
-
+    
+    .hero-image {
+        position: absolute;
+        width: 100vw;
+        object-fit: contain;
+    }
+    
     .hero-text-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        height: 40vh;
-        font-size: 2rem;
+        height: 40rem;
+        font-size: 2.4rem;
         color: whitesmoke;
+        animation-name: fadeOut;
+        animation-duration: .25s;
+        animation-delay: 5.5s;
+        animation-fill-mode: forwards;
     }
-
-    /*TODO: use this for bigger screens
-    /* .hero-text-container {
-        height: 100%;
+    
+    
+    .hero-text {
+        animation-name: fadeIn, moveInTop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        backface-visibility: hidden;
+    }
+    
+    .hero-text:nth-child(2) {
+        opacity: 0;
+        animation-delay: 2s;
+    }
+    
+    .hero-text:nth-child(3) {
+        opacity: 0;
+        animation-delay: 4s;
+    }
+    
+    .hero-text-final-container {
         position: absolute;
         top: 0;
-        left: 0;
-        background-color: rgba(200, 200, 200, 0.2);
-    } */
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: 3.6rem;
+        color: #FFDF00;
+        text-shadow: 0 0 3px slategray;
+    }
+    
+    .hero-text-final {
+        opacity: 0;
+        margin: 1rem 3rem;
+        text-transform: uppercase;
+        animation-name: moveInTop, fadeIn;
+        animation-duration: 2s;
+        animation-delay: 5.5s;
+        animation-fill-mode: forwards;
+    }
 }
 
 @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
@@ -144,11 +142,20 @@ body {
       }
 }
 
-@keyframes changeFirstHeroImage {
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes changeHeroImage {
     0% {
         background-image: url('../images/grief.jpg');
     }
     100% {
-        background-image: url('../images/illness.jpg');
+        background-image: url('../images/geese.jpg');
     }
 }

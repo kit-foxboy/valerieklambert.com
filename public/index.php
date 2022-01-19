@@ -3,46 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
     <title>Valerie K Lambert, LCSW, CT</title>
 </head>
 <body class="container">
-    <header class="header">
-        <nav>
-            <div class="nav-container">
-                <div class="nav-background">
-                    &nbsp;
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Office Policies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Forms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Helpful Resources</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="navbar">
-                <h1 class="brand-header">Valerie K Lambert</h1>
-                <button type="button" class="nav-button">NAV</button>
-            </div>
+    <div class="navigation">
+        <input type="checkbox" id="navigation-toggle" class="navigation-checkbox" />
+        <label for="navigation-toggle" class="navigation-button">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation-background">
+            &nbsp;
+        </div>
+        <nav class="nav">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">About Me</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Office Policies</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Forms</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Helpful Resources</a>
+                </li>
+            </ul>
         </nav>
+    </div>
+
+    <header class="header">
+        <div class="navbar">
+            <h1 class="navbar-brand">
+                <span class="main">Valerie Lambert</span>
+            </h1>
+            <div class="navbar-navigation">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">About Me</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Office Policies</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Forms</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Helpful Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="hero-banner">
             <!-- <img class="hero-image" src="/images/grief.jpg" /> -->
+            <div class="hero-text-final-container">
+                <h3 class="hero-text-final">Hope</h3>
+            </div>
             <div class="hero-text-container">
                 <h3 class="hero-text">Grief?</h3>
                 <h3 class="hero-text">Chronic Illness?</h3>
-                <h3 class="hero-text">Axiety?</h3>
+                <h3 class="hero-text">Anxiety?</h3>
             </div>
         </div>
     </header>
@@ -85,7 +109,7 @@
             </div>
         </section>
         <section class="features">
-            <div class="features">
+            <div class="features-list">
                 <h3 class="features-header">How I Can Help</h3>
                 <div class="feature-box-container">
                     <div class="feature-box">
@@ -123,6 +147,5 @@
         </p>
         Photo by <a href="https://unsplash.com/@a_d_s_w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adrian Swancar</a> on <a href="https://unsplash.com/s/photos/anxious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     </footer>
-    <script type="text/javascript" src="js/animation.js"></script>
 </body>
 </html>
